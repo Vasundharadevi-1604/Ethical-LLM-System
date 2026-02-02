@@ -1,0 +1,24 @@
+Ethical_LLM_System/
+│
+├── 📁 data/
+│   └── MaliciousQueries.csv
+│
+├── 📁 experiments/
+│   ├── run_experiment.py
+│   │
+│   ├── 📁 results/
+│   │   ├── finbert_results.json
+│   │   ├── hatebert_results.json
+│   │   ├── sentibert_results.json
+│   │   └── ensemble_results.json
+│
+├── 📁 application/
+│   ├── streamlit_app.py
+│   ├── ethical_pipeline.py
+│   ├── ethical_alternatives.py
+│   └── llm_generator.py
+│
+├── requirements.txt
+├── README.md
+├── .env                (optional – API keys, local only)
+└── venv/               (local virtual environment – NOT shared)
