@@ -1,7 +1,5 @@
-fastapi
-uvicorn
 streamlit
-pydantic
-requests
 google-generativeai
 python-dotenv
+protobuf
+requests
