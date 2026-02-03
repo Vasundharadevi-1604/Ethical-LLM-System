@@ -118,11 +118,11 @@ Ethical-LLM-System/
 
 ## 🛠️ Technologies Used
 
-- **Python**
-- **Streamlit** (UI & deployment)
-- **Gemini LLM** (controlled generation)
-- **Transformers (BERT variants)** for classification
-- **Render** for public deployment
+- Python
+- Streamlit (UI & deployment)
+- Gemini LLM (controlled generation)
+- Transformers (BERT variants) for classification
+- Render for public deployment
 
 ---
 
