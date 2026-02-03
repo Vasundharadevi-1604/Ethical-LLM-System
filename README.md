@@ -30,7 +30,6 @@ This project focuses on **Responsible AI, AI Safety, and Trust & Governance**.
 ---
 
 ## 🎯 Key Objectives
-
 - Prevent harmful prompt execution
 - Enforce ethical AI usage at prompt level
 - Provide transparent and explainable decisions
