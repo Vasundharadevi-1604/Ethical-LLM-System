@@ -63,7 +63,7 @@ The architecture is designed to be:
 - Displays stage-wise ethical analysis
 - Shows final ethical response
 
-### 2. Ethical Decision Engine (`ethics_engine/`)
+### 2. Ethical Decision Engine (`ethical_layer/`)
 - `ethical_pipeline.py` – orchestrates ethical checks
 - `llm_generator.py` – generates responses for SAFE prompts
 - `ethical_alternatives.py` – handles UNSAFE prompts with safe guidance
