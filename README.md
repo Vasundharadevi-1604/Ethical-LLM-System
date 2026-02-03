@@ -13,7 +13,7 @@ https://ethical-llm-system.onrender.com
 
 ---
 
-## 🚀 Project Overview
+<h2>🚀 Project Overview</h2>
 
 Large Language Models are powerful but can be misused through malicious, unsafe, or unethical prompts.  
 **The Ethical LLM System** addresses this problem by introducing an **ethics-first decision layer** that evaluates user prompts *before* they reach the LLM.
