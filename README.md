@@ -1,6 +1,9 @@
 # 🛡️ The Ethical LLM System
 
-A **production-deployed Ethical Decision Layer for Large Language Models (LLMs)** that performs prompt-level risk analysis and enforces responsible AI behavior before any response is generated.
+A **production-ready Ethical Decision Layer for Large Language Models (LLMs)** that evaluates user prompts for safety, ethics, and intent *before* generating responses.
+
+This system demonstrates how responsible AI can be **designed, enforced, and deployed** in real-world applications.
+
 
 ---
 
