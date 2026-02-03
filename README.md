@@ -126,15 +126,7 @@ Ethical-LLM-System/
 ## ▶️ Running Locally
 
 ```bash
-git clone https://github.com/<your-username>/Ethical-LLM-System.git
-cd Ethical-LLM-System
-
-pip install -r requirements.txt
-streamlit run app.py
-
-
-```bash
-git clone https://github.com/<your-username>/Ethical-LLM-System.git
+git clone https://github.com/your-username/Ethical-LLM-System.git
 cd Ethical-LLM-System
 
 pip install -r requirements.txt
