@@ -84,29 +84,32 @@ Multiple models (RoBERTa, XLM-R, SentiBERT) were evaluated, and an ensemble appr
 
 ## 📁 Project Structure
 
+```text
 Ethical-LLM-System/
 │
 ├── app.py
+│
 ├── ethics_engine/
-│ ├── ethical_pipeline.py
-│ ├── llm_generator.py
-│ └── ethical_alternatives.py
+│   ├── ethical_pipeline.py
+│   ├── llm_generator.py
+│   └── ethical_alternatives.py
 │
 ├── datasets/
-│ └── MaliciousQueries.csv
+│   └── MaliciousQueries.csv
 │
 ├── research/
-│ ├── run_experiment_final.py
-│ └── bert_results_final.py
+│   ├── run_experiment_final.py
+│   └── bert_results_final.py
 │
 ├── docs/
-│ ├── architecture.md
-│ └── project_report.pdf
+│   ├── architecture.md
+│   └── project_report.pdf
 │
 ├── requirements.txt
 ├── Procfile
 ├── .gitignore
 └── README.md
+
 
 ---
 
