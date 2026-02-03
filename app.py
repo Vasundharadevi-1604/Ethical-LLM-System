@@ -1,5 +1,5 @@
 import streamlit as st
-from ethical_pipeline import ethical_llm_pipeline
+from ethical_layer import ethical_llm_pipeline
 
 # ---------------------------------------------------
 # Page Configuration
