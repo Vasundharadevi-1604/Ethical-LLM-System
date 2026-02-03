@@ -92,7 +92,7 @@ Ethical-LLM-System/
 │
 ├── app.py
 │
-├── ethics_engine/
+├── ethical_layer/
 │   ├── ethical_pipeline.py
 │   ├── llm_generator.py
 │   └── ethical_alternatives.py
