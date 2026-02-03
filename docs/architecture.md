@@ -16,7 +16,7 @@ real-world Responsible AI and Trust & Safety pipelines used in Big Tech.
 ```mermaid
 flowchart TD
 
-    U[User] --> UI[Streamlit Web UI]
+    U[User Prompt] --> UI[Streamlit Web UI]
 
     UI --> EP[Ethical Decision Pipeline]
 
