@@ -3,8 +3,8 @@
 # Main Ethical LLM Pipeline
 # ---------------------------------------------------
 
-from llm_generator import generate_safe_response
-from ethical_alternatives import generate_ethical_alternatives
+from .llm_generator import generate_safe_response
+from .ethical_alternatives import generate_ethical_alternatives
 
 # ---------------------------------------------------
 # Final binary labels used across the system
@@ -124,3 +124,4 @@ def ethical_llm_pipeline(user_prompt: str) -> dict:
         "final_label": harmfulness_label,
         "final_response": final_response
     }
+
