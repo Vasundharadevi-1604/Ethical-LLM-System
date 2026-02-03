@@ -2,45 +2,33 @@
 
 ## Overview
 
-The Ethical LLM System is designed as a **prompt-level ethical decision layer**
-that evaluates user inputs before allowing interaction with a Large Language Model (LLM).
-The system ensures that generated responses are safe, responsible, and aligned with ethical AI principles.
+The Ethical LLM System is a **prompt-level ethical decision layer**
+designed to analyze user inputs before they reach a Large Language Model (LLM).
+The goal is to ensure **safe, responsible, and explainable AI outputs**.
 
-## High-Level Architecture
+The system follows a **modular, multi-stage architecture**, inspired by
+real-world Responsible AI and Trust & Safety pipelines used in Big Tech.
 
-The system consists of the following core components:
+---
 
-1. **User Interface (Streamlit)**
-2. **Ethical Decision Pipeline**
-3. **LLM Response Generator**
-4. **Ethical Alternatives Module**
+## High-Level Architecture Diagram
 
-## Component Description
+```mermaid
+flowchart TD
 
-### 1. Streamlit UI
-- Acts as the entry point for user prompts.
-- Displays intermediate ethical analysis stages.
-- Presents the final ethical response.
+    U[User] --> UI[Streamlit Web UI]
 
-### 2. Ethical Decision Pipeline
-- Orchestrates the entire decision-making process.
-- Applies multiple safety and intent-detection checks.
-- Integrates ensemble-based classification logic.
+    UI --> EP[Ethical Decision Pipeline]
 
-### 3. LLM Generator
-- Invoked only when prompts are classified as SAFE.
-- Generates contextual and informative responses.
-- Abstracted to allow future LLM replacement.
+    EP --> RD[Risk Detection Module]
+    EP --> AC[Age / Intent Classification]
+    EP --> ED[Ensemble Decision Logic]
 
-### 4. Ethical Alternatives Module
-- Activated for UNSAFE prompts.
-- Provides safe rephrasings, redirections, or educational alternatives.
+    ED -->|SAFE| LLM[LLM / Gemini Generator]
+    ED -->|UNSAFE| EA[Ethical Alternatives Module]
 
-## Design Rationale
+    LLM --> FR[Final Ethical Response]
+    EA --> FR
 
-- **Prompt-level moderation** ensures early intervention.
-- **Modular architecture** allows independent upgrades.
-- **Separation of concerns** improves maintainability and scalability.
-
-This architecture reflects real-world Responsible AI system design principles.
+    FR --> UI
 
