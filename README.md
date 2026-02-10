@@ -16,7 +16,7 @@ https://ethical-llm-system.onrender.com
 
 ---
 
-<h2>🚀 Project Overview</h2>
+## 🚀 Project Overview
 
 Large Language Models are powerful but can be misused through malicious, unsafe, or unethical prompts.  
 **The Ethical LLM System** addresses this problem by introducing an **ethics-first decision layer** that evaluates user prompts *before* they reach the LLM.
@@ -42,33 +42,58 @@ This project focuses on **Responsible AI, AI Safety, and Trust & Governance**.
 
 ---
 
-## 🧠 System Architecture (High Level)
+## 🏗️ High-Level Architecture
 
-
-The architecture is designed to be:
-- modular
-- explainable
-- deployment-friendly
-- aligned with real-world Trust & Safety systems
-
-📄 Full details: `docs/architecture.md`
+User Prompt
+│
+▼
+Ethical Decision Engine
+│
+├── Stage 1: Risk Detection
+├── Stage 2: Safety Classification
+├── Stage 3: Ethical Decision
+│
+├── SAFE → LLM Response Generation
+└── UNSAFE → Ethical Alternatives & Guidance
 
 ---
 
-## ⚙️ Core Components
+## ⚙️  System Components
 
-### 1. Streamlit Interface (`app.py`)
-- Public-facing UI
-- Accepts user prompts
+### 1️⃣ Streamlit Interface (`app.py`)
+- Clean UI for user interaction
 - Displays stage-wise ethical analysis
-- Shows final ethical response
+- Presents final ethical responses clearly
 
-### 2. Ethical Decision Engine (`ethical_layer/`)
-- `ethical_pipeline.py` – orchestrates ethical checks
-- `llm_generator.py` – generates responses for SAFE prompts
-- `ethical_alternatives.py` – handles UNSAFE prompts with safe guidance
+---
 
-This engine acts as the **ethical gatekeeper** of the system.
+### 2️⃣ Ethical Decision Layer (`ethical_layer/`)
+
+| Module | Responsibility |
+|------|---------------|
+| `ethical_pipeline.py` | Orchestrates the complete ethical decision flow |
+| `llm_generator.py` | Generates responses only for SAFE prompts |
+| `ethical_alternatives.py` | Provides constructive guidance for UNSAFE prompts |
+
+This layer is modular and can be **reused as an ethical middleware** in other AI systems.
+
+---
+
+### 3️⃣ Research & Evaluation (`research/`)
+- Malicious prompt experimentation
+- Transformer-based classification models
+- Ensemble evaluation for robustness
+
+Models evaluated include:
+- RoBERTa
+- XLM-R
+- SentiBERT
+
+---
+
+### 4️⃣ Dataset (`data/`)
+- Curated malicious prompt dataset
+- Used to evaluate unsafe and adversarial inputs
 
 ---
 
@@ -123,6 +148,16 @@ Ethical-LLM-System/
 - Gemini LLM (controlled generation)
 - Transformers (BERT variants) for classification
 - Render for public deployment
+
+---
+
+## 🌍 Deployment
+
+- Publicly deployed using **Render**
+- Fully accessible via web browser
+- Demonstrates real-world AI system deployment
+
+🔗 **Live URL:** https://ethical-llm-system.onrender.com
 
 ---
 
