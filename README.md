@@ -65,7 +65,6 @@ The Ethical LLM System is designed as a **modular, production-oriented architect
 
 This layer is intentionally kept lightweight to maintain **separation between UI and decision logic**.
 
----
 
 ### 2️⃣ Ethical Decision Layer (`ethical_layer/`)
 This is the **core intelligence** of the system and functions as an ethical gatekeeper before any LLM response is generated.
@@ -82,7 +81,6 @@ This is the **core intelligence** of the system and functions as an ethical gate
 
 This layer is designed to be **reusable as an ethical middleware** for other LLM-based systems.
 
----
 
 ### 3️⃣ Research & Evaluation Layer (`research/`)
 - Contains experimentation and evaluation scripts
@@ -94,7 +92,6 @@ This layer is designed to be **reusable as an ethical middleware** for other LLM
 
 This layer ensures ethical decisions are **data-driven and research-backed**.
 
----
 
 ### 4️⃣ Dataset Layer (`data/`)
 - Includes curated malicious prompt datasets
@@ -103,7 +100,6 @@ This layer ensures ethical decisions are **data-driven and research-backed**.
 
 Provides realistic grounding for ethical decision-making.
 
----
 
 ### 5️⃣ Documentation Layer (`docs/`)
 - **`architecture.md`** – System architecture and ethical flow explanation
@@ -111,7 +107,6 @@ Provides realistic grounding for ethical decision-making.
 
 Supports transparency, explainability, and reviewability.
 
----
 
 ### 6️⃣ Deployment & Configuration
 - **`requirements.txt`** – Dependency management
