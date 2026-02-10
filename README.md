@@ -65,6 +65,7 @@ The Ethical LLM System is designed as a **modular, production-oriented architect
 
 This layer is intentionally kept lightweight to maintain **separation between UI and decision logic**.
 
+--
 
 ### 2️⃣ Ethical Decision Layer (`ethical_layer/`)
 This is the **core intelligence** of the system and functions as an ethical gatekeeper before any LLM response is generated.
