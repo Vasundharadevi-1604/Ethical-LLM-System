@@ -7,12 +7,8 @@ This system demonstrates how responsible AI can be designed, enforced, and deplo
 
 ---
 
-## 🔗 Live Demo
-
-👉 **Public Deployment:**  
+🌐 **Live Deployment:**  
 https://ethical-llm-system.onrender.com
-
-> A real-time Streamlit application demonstrating ethical prompt moderation and safe LLM response generation.
 
 ---
 
