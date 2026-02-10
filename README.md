@@ -53,55 +53,72 @@ Ethical Decision Engine
 
 ---
 
-## ⚙️  System Components
+## ⚙️ System Components
 
-### 1️⃣ Streamlit Interface (`app.py`)
-- Clean UI for user interaction
+The Ethical LLM System is designed as a **modular, production-oriented architecture**, where each component has a clear responsibility and can evolve independently.
+
+### 1️⃣ User Interface (Streamlit – `app.py`)
+- Acts as the **single entry point** for user interaction
+- Accepts natural-language prompts
 - Displays stage-wise ethical analysis
-- Presents final ethical responses clearly
+- Presents the final ethical response in an explainable format
+
+This layer is intentionally kept lightweight to maintain **separation between UI and decision logic**.
 
 ---
 
 ### 2️⃣ Ethical Decision Layer (`ethical_layer/`)
+This is the **core intelligence** of the system and functions as an ethical gatekeeper before any LLM response is generated.
 
-| Module | Responsibility |
-|------|---------------|
-| `ethical_pipeline.py` | Orchestrates the complete ethical decision flow |
-| `llm_generator.py` | Generates responses only for SAFE prompts |
-| `ethical_alternatives.py` | Provides constructive guidance for UNSAFE prompts |
+**Key modules:**
+- **`ethical_pipeline.py`**  
+  Orchestrates the complete ethical decision flow, controls prompt routing, and determines SAFE vs UNSAFE outcomes.
 
-This layer is modular and can be **reused as an ethical middleware** in other AI systems.
+- **`llm_generator.py`**  
+  Generates responses **only for SAFE prompts** using controlled LLM access, preventing unchecked model execution.
 
----
+- **`ethical_alternatives.py`**  
+  Handles UNSAFE prompts by providing safe, constructive, and ethical guidance instead of harmful outputs.
 
-### 3️⃣ Research & Evaluation (`research/`)
-- Malicious prompt experimentation
-- Transformer-based classification models
-- Ensemble evaluation for robustness
-
-Models evaluated include:
-- RoBERTa
-- XLM-R
-- SentiBERT
+This layer is designed to be **reusable as an ethical middleware** for other LLM-based systems.
 
 ---
 
-### 4️⃣ Dataset (`data/`)
-- Curated malicious prompt dataset
-- Used to evaluate unsafe and adversarial inputs
+### 3️⃣ Research & Evaluation Layer (`research/`)
+- Contains experimentation and evaluation scripts
+- Evaluates transformer-based models such as:
+  - RoBERTa
+  - XLM-R
+  - SentiBERT
+- Supports ensemble-based robustness analysis
+
+This layer ensures ethical decisions are **data-driven and research-backed**.
 
 ---
 
-## 📊 Research & Evaluation
+### 4️⃣ Dataset Layer (`data/`)
+- Includes curated malicious prompt datasets
+- Represents real-world unsafe and adversarial inputs
+- Used for testing, evaluation, and validation
 
-The ethical decision logic is supported by:
-- curated malicious prompt datasets,
-- transformer-based classifiers,
-- ensemble model evaluation.
+Provides realistic grounding for ethical decision-making.
 
-Multiple models (RoBERTa, XLM-R, SentiBERT) were evaluated, and an ensemble approach was selected to improve robustness and reduce false positives.
+---
 
-📄 Full evaluation and results are documented in the project report.
+### 5️⃣ Documentation Layer (`docs/`)
+- **`architecture.md`** – System architecture and ethical flow explanation
+- **`project_report.docx`** – Complete academic and technical documentation
+
+Supports transparency, explainability, and reviewability.
+
+---
+
+### 6️⃣ Deployment & Configuration
+- **`requirements.txt`** – Dependency management
+- **`Procfile`** – Render deployment configuration
+- **`LICENSE`** – Open-source usage clarity (MIT License)
+
+Enables **production deployment and maintainability**.
 
 ---
 
