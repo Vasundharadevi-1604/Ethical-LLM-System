@@ -44,6 +44,7 @@ This project focuses on **Responsible AI, AI Safety, and Trust & Governance**.
 
 ## 🏗️ High-Level Architecture
 
+```text
 User Prompt
 │
 ▼
@@ -55,6 +56,7 @@ Ethical Decision Engine
 │
 ├── SAFE → LLM Response Generation
 └── UNSAFE → Ethical Alternatives & Guidance
+```
 
 ---
 
