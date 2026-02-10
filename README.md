@@ -4,12 +4,8 @@ A production-ready Ethical Decision Layer for Large Language Models (LLMs) that 
 
 This system demonstrates how responsible AI can be designed, enforced, and deployed in real-world applications.
 
-
----
-
 🌐 **Live Deployment:**  
 https://ethical-llm-system.onrender.com
-
 
 ---
 
